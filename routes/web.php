@@ -60,3 +60,12 @@ Route::post('/admin/addanm',[Adminzone::class,'addanm']);
 
 Route::get('/admin/watchman',[Adminzone::class,'watchman']);
 Route::post('/admin/addwatchman',[Adminzone::class,'addwatchman']);
+
+Route::get('locale/{locale}',function($locale){
+    if (! in_array($locale, ['en', 'hi'])) {
+        abort(400);
+    }
+    Session::put('locale',$locale);
+    return redirect()->back();
+
+});

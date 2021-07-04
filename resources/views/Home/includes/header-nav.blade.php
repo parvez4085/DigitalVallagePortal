@@ -28,22 +28,31 @@
                     </nav>
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{url('/')}}">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="{{url('/')}}"> 
+                            {{ __('home_text')}}
+                            <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/about')}}">About</a>
+                            <a class="nav-link" href="{{url('/about')}}">
+                            {{ __('about_text')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/')}}">Scheme</a>
+                            <a class="nav-link" href="{{url('/')}}">{{ __('scheme_text')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/')}}">Vision</a>
+                            <a class="nav-link" href="{{url('/')}}">{{ __('vision_text')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/')}}">Complaint</a>
+                            <a class="nav-link" href="{{url('/')}}">{{ __('complaint_text')}}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{url('/contact')}}">Contact</a>
+                            <a class="nav-link" href="{{url('/contact')}}">{{ __('contact_text')}}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locale/hi">Hindi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locale/en">Engilsh</a>
                         </li>
                     </ul>
                 </div>

@@ -6,7 +6,7 @@
     <div class="container">
       <ul class="breadcrumbs-custom-path">
         <li><a href="{{url('/')}}">Home</a></li>
-        <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span> About Us</li>
+        <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span> {{ __('about_us_text')}}</li>
       </ul>
     </div>
   </section>
@@ -22,7 +22,7 @@
         </div>
         <div class="col-lg-6 pl-lg-5 ">
           <div class="header-title">
-            <span class="sub-title">About Us</span>
+            <span class="sub-title">{{ __('about_us_text')}}</span>
             <h3 class="hny-title text-left">Learn at Your Own Place</h3>
           </div>
 
